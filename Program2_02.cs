@@ -9,7 +9,6 @@ string GetThirdDigit(string num){
     }
     
 }
-
 Console.WriteLine("Введите число");
 string num = Console.ReadLine();
 
