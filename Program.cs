@@ -21,14 +21,11 @@ int max = nums[0];
 Console.WriteLine("Введите три числа (по одному)");
 for (int i = 0; i<3; i++) {
     nums[i] = int.Parse(Console.ReadLine());
-    if (i == 1){
-        max = nums[i];
-    }
-    else {
+    
         if (max < nums[i]){
             max = nums[i];
         }
-    }
+    
 }
 Console.WriteLine($"Ответ: {max}");
 
@@ -47,6 +44,10 @@ Console.WriteLine("Введите число");
 int n = int.Parse(Console.ReadLine());
 int current = 2;
 for (int i = 1; i < n; i = i+2){
-    Console.Write(current + ", ");
+    Console.Write(current);
+        if (i < n-2){
+            Console.Write(", ");
+        }
     current = current + 2;
 }
+Console.Write("\b");
