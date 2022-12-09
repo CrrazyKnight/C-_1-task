@@ -1,7 +1,7 @@
 void Search(){
-    Console.Write("Введите количество столбцов ");
+    Console.Write("Введите количество строк ");
     int m = int.Parse(Console.ReadLine());
-    Console.Write("Введите количество строк  ");
+    Console.Write("Введите количество столбцов  ");
     int n = int.Parse(Console.ReadLine());
     int[,] array = new int[m, n];
 
